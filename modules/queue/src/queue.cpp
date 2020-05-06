@@ -2,7 +2,7 @@
 
 #include "include/queue.h"
 
-Queue::Queue(int s) {
+Queue::Queue(size_t s) {
     if (s < 1)
         throw "Queue size < 1";
     tail_ = -1;
