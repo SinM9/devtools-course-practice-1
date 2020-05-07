@@ -11,13 +11,13 @@ class Queue {
     int tail_;
     int head_;
     std::vector<int> pq_;
-    size_t size_;
+    int size_;
     int count_;
 
     int GetNextIndex(int index) const;
 
  public:
-    explicit Queue(size_t s = 10);
+    explicit Queue(int s = 10);
     Queue(const Queue &q);
 
     void Put(int val);
