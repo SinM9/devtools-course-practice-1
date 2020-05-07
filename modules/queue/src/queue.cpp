@@ -2,9 +2,9 @@
 
 #include "include/queue.h"
 
-Queue::Queue(size_t s) {
-    if (s < 1)
-        throw "Queue size < 1";
+Queue::Queue(int s) {
+    if (s < 0)
+        throw "Queue size < 0";
     tail_ = -1;
     head_ = -1;
     pq_.resize(s);
